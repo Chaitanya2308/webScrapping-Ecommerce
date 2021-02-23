@@ -14,7 +14,7 @@ function App() {
 
   const getAmazonData = async () => {
 
-    const data = await fetch("http://localhost:3000/products");
+    const data = await fetch("https://web-scrapping-backend.herokuapp.com/products");
     const response = await data.json();
     console.log(response);
     setData(response);
